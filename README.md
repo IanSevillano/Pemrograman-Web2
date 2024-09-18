@@ -1,9 +1,24 @@
-<h2>Penjelasan beserta Coding</h3>
+<h2>Penjelasan beserta Coding</h2>
+
+<h4>Object Oriented Programming</h4>
 Object-Oriented Programming (OOP) dalam PHP memungkinkan pengembangan
 perangkat lunak yang lebih terstruktur dan modular. Konsep-konsep seperti Inheritance,
 Polymorphism, Encapsulation, dan Abstraction adalah pilar penting yang membuat
 OOP efisien. Dengan menguasai konsep-konsep ini, pengembang dapat membuat kode
 yang lebih fleksibel, dapat digunakan kembali, dan mudah dipelihara.<br>
+memiliki 4 prinsip yaitu:<br>
+
+<h4>Encapsulation</h4>
+Encapsulation (Pengkapsulan): Menggabungkan data dan metode yang bekerja pada data tersebut dalam satu unit yang disebut objek. Encapsulation melindungi data dari akses langsung luar dan memungkinkan kontrol lebih baik atas data.<br>
+
+<h4>Abstraction</h4>
+Abstraction (Abstraksi): Menyembunyikan detail implementasi dan hanya menunjukkan fitur-fitur penting dari suatu objek. Dengan abstraksi, pengguna hanya perlu memahami cara menggunakan objek tanpa perlu tahu bagaimana objek tersebut diimplementasikan di balik layar.<br>
+
+<h4>Inheritance</h4>
+Inheritance (Pewarisan): Memungkinkan sebuah kelas untuk mewarisi atribut dan metode dari kelas lain. Ini memungkinkan pengkodean ulang yang lebih efisien dan penggunaan kembali kode yang telah ada.<br>
+
+<h4>Polymorphism</h4>
+Polymorphism (Polimorfisme): Kemampuan objek untuk menggunakan metode yang sama dengan cara yang berbeda tergantung pada jenis objek yang memanggil metode tersebut. Ini membantu dalam menggunakan antarmuka yang sama untuk tipe data yang berbeda.<br>
 
 <h4>#JobSheet1</h4>
 Class Dosen, memiliki properties(nama,nip,mataKuliah) yang dapat dioperasikan pada method constructor
