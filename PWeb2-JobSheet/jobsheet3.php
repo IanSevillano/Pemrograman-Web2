@@ -87,7 +87,7 @@ class JurnalDosen extends Jurnal {
 
     // submitJurnal untuk Dosen
     public function submitJurnal() {
-        return "Jurnal '" . $this->judul . "' telah diajukan oleh Dosen: " . $this->dosen->getName() . " (NIDN: " . $this->dosen->getNidn() . ")";
+        return "Jurnal '" . $this->judul . "' diterbitkan oleh Dosen: " . $this->dosen->getName() . " (NIDN: " . $this->dosen->getNidn() . ")";
     }
 }
 
@@ -102,21 +102,21 @@ class JurnalMahasiswa extends Jurnal {
 
     // submitJurnal untuk Mahasiswa
     public function submitJurnal() {
-        return "Jurnal '" . $this->judul . "' telah diajukan oleh Mahasiswa: " . $this->mahasiswa->getName() . " (NIM: " . $this->mahasiswa->getNim() . ")";
+        return "Jurnal '" . $this->judul . "' diterbitkan oleh Mahasiswa: " . $this->mahasiswa->getName() . " (NIM: " . $this->mahasiswa->getNim() . ")";
     }
 }
 
 // Objek Dosen dan Mahasiswa
-$dosen = new Dosen("Jonathan Liandi", "904010");
-$mahasiswa = new Mahasiswa("Maxhill Leonardo", "801040");
+$dosen = new Dosen("Daniel Park", "904010");
+$mahasiswa = new Mahasiswa("Kim Gimyung", "801040");
 
 // Menampilkan role
-echo $dosen->getName() . " adalah " . $dosen->getRole() . " "; // Output: Dr. John adalah Dosen
-echo $mahasiswa->getName() . " adalah " . $mahasiswa->getRole() . " "; // Output: Alice adalah Mahasiswa
+echo $dosen->getName() . " adalah " . $dosen->getRole() . " "; // Output: Daniel Park adalah Dosen
+echo $mahasiswa->getName() . " adalah " . $mahasiswa->getRole() . " "; // Output: Kim Gimyung adalah Mahasiswa
 
 // Mengelola jurnal Dosen dan Mahasiswa
-$jurnalDosen = new JurnalDosen("Penelitian Program", $dosen);
-$jurnalMahasiswa = new JurnalMahasiswa("Riset Program", $mahasiswa);
+$jurnalDosen = new JurnalDosen("Romantic Deadly", $dosen);
+$jurnalMahasiswa = new JurnalMahasiswa("The Big Deal", $mahasiswa);
 
 echo $jurnalDosen->submitJurnal(); // Output: Jurnal Penelitian Program telah diajukan oleh Dosen: Jonathan Liandi (NIDN: 904010)
 echo " ";
